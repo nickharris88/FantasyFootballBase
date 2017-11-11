@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Copperplate.ttc">
+            <string>Copperplate</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,7 +30,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKe-Pg-Hda">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FANTASY FOOTBALL BASE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OU-R8-C9t">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who Got The Assist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OU-R8-C9t">
                                         <rect key="frame" x="59" y="26" width="257" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="a3Y-K1-6Te"/>
@@ -34,8 +39,12 @@
                                         <color key="textColor" red="1" green="0.88252185800370753" blue="0.091901256305830015" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter bavies" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-nT-t9h">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.31483780419818108" green="0.55826662568793028" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.79879970441192905" green="0.25365359577422253" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="3OU-R8-C9t" firstAttribute="top" secondItem="RKe-Pg-Hda" secondAttribute="top" constant="26" id="Kbd-dN-38V"/>
                                     <constraint firstAttribute="trailing" secondItem="3OU-R8-C9t" secondAttribute="trailing" constant="59" id="UCd-2o-qdm"/>
@@ -50,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="44" id="wB2-WW-rmc"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="0.88252185800000005" blue="0.091901256309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="barTintColor" red="0.31483780420000002" green="0.55826662569999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.41759738287656778" green="0.15468544352037636" blue="0.56299571700507611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y1K-ly-nAS">
@@ -64,7 +73,7 @@
                                     <segment title="Score"/>
                                     <segment title="PPG"/>
                                 </segments>
-                                <color key="tintColor" red="0.31483780420000002" green="0.55826662569999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.41759738289999998" green="0.15468544349999999" blue="0.56299571699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="y3c-LO-XRc"/>
                                 </connections>
@@ -77,7 +86,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tMx-LE-EKr" id="Tqp-a2-AVC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Romelu Lukaku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-UK-ZWa">
@@ -207,7 +216,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svM-DQ-H6U">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FANTASY FOOTBALL BASE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-hH-U8f">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO GOT THE ASSIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-hH-U8f">
                                         <rect key="frame" x="59" y="26" width="257" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="xMN-qH-M2F"/>
@@ -217,7 +226,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.31483780420000002" green="0.55826662569999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.79879970440000003" green="0.25365359580000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="DpO-ep-nBJ"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73" id="NrS-sX-7tt"/>
@@ -256,4 +265,7 @@
             <point key="canvasLocation" x="1021.6" y="130.88455772113943"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="twitter bavies" width="1500" height="360"/>
+    </resources>
 </document>

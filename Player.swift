@@ -61,7 +61,7 @@ class Player {
         return _imgURL
     }
     
-var Teams = ["Arsenal", "Bournemouth", "Burnley", "Chelsea", "Crystal Palace","Everton", "Hull City", "Leicester", "Liverpool", "Manchester City", "Manchester United", "Middlesborough", "Southampton", "Stoke City", "Sunderland", "Swansea", "Tottenham", "Watford", "West Brom", "West Ham"]
+var Teams = ["Arsenal", "Bournemouth", "Brighton", "Burnley", "Chelsea", "Crystal Palace","Everton", "Huddersfield", "Leicester", "Liverpool", "Manchester City", "Manchester Utd",  "Newcastle Utd", "Southampton", "Stoke City", "Swansea", "Tottenham", "Watford", "West Brom", "West Ham"]
     
     init(name: String) {
         self._name = name
